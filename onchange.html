@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchange</title>
+</head>
+<body>
+    <form action="">
+        <table>
+             <tr>
+                <td><label>UserName</label></td>
+                <td><input type="text" id="username" onchange="hello()">
+                <label id="res"></label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>PassWord</label></td>
+                <td><input type="password" id="password" onchange="hello2()">
+                <label id="res2"></label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>UserName</label></td>
+                <td><input type="text" id="username" onchange="hello()">
+                <label id="res"></label>
+                </td>
+            </tr>
+            <tr>
+                <td><button>UserName</button></td>
+                <td><button>Reset</button></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function hello()
+        {
+            var uname=document.getElementById("username").value;
+            document.getElementById("res").innerHTML="hello "+uname
+        }
+        function hello2()
+        {
+            var pwd=document.getElementById("password").value;
+            if(pwd.length<=6)
+            {
+                document.getElementById("res2").innerHTML="weak password";
+                document.getElementById("res2").style.color="red";
+            }
+            else
+            {
+                document.getElementById("res2").innerHTML="strong password";
+                document.getElementById("res2").style.color="green";
+            }
+        }
+    </script>
+</body>
+</html>

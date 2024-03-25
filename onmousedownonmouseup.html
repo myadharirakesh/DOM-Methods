@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onmousedown</title>
+</head>
+<body>
+    <p id="para" onmousedown="hello()" onmouseup="hello2()">
+        This practice lesson consists of short paragraphs about interesting subjects. 
+        Find fun keyboard typing practice—and learn something new! Our paragraph practice is great
+         typing practice for writing essays, reports, emails, and more for school and work.
+        ContinueThis practice lesson consists of short paragraphs about interesting subjects.
+         Find fun keyboard typing practice—and learn something new! Our paragraph practice is great 
+         typing practice for writing essays, reports, emails, and more for school and work.
+        ContinueThis practice lesson consists of short paragraphs about interesting subjects. 
+        Find fun keyboard typing practice—and learn something new! Our paragraph practice is great typing practice
+         for writing essays, reports, emails, and more for school and work.
+        ContinueThis practice lesson consists of short paragraphs about interesting subjects. Find fun keyboard
+    </p>
+    <script>
+        function hello()
+        {
+            document.getElementById("para").style.color="red";
+        }
+        function hello2()
+        {
+            document.getElementById("para").style.color="blue";
+        }
+    </script>
+</body>
+</html>

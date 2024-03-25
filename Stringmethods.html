@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+</head>
+<body>
+    <script>
+        var str="welcome To JavaScript"
+        var res=str.toLowerCase();
+        var res1=str.toUpperCase();
+        var res2=str.slice(0,3);
+        var res3=str.slice(-5);
+        var res4=str.substring(0,9)
+        var res5=str.substr(4,5);
+        document.write("Converting Lower Case :"+res+"<br>");//Converting Lower Case :welcome to javascript
+        document.write("Converting Upper Case :"+res1+"<br>");//Converting Upper Case :WELCOME TO JAVASCRIPT
+        document.write(res2+","+res3+"<br>");//wel,cript
+        document.write(res4+"<br>");//welcome T
+        document.write(res5+"<br>");//ome T
+
+        var str1="5";
+        var result=str1.padStart(4,"0");
+        var result1=str1.padStart(5,"&")
+        var result2=str1.padEnd(6,"*");
+        var result3=str1.padStart(8,"%");
+        document.write(result+"<br>");//0005
+        document.write(result1+"<br>");//&&&&5
+        document.write(result2+"<br>");//5*****
+        document.write(result3+"<br>");//%%%%%%%5
+
+        var str2="Rakhi";
+        var result=str2.concat("Bhai");
+        var result1=str2.repeat(4);
+        var result2=str2.replace("Rakhi","Bhai")
+        document.write(result+"<br>");//RakhiBhai
+        document.write(result1+"<br>");//RakhiRakhiRakhiRakhi
+        document.write(result2+"<br>");//Bhai
+
+        var str4="Hello my name is rakhi my school";
+        var res=str4.indexOf("my");
+        var res1=str4.lastIndexOf("my");
+        document.write(res+"<br>");//6
+        document.write(res1+"<br>");//23
+
+        var str5="Hello welcome to JS";
+        var res=str5.startsWith("Hello");
+        var res1=str5.startsWith("welcom");
+        var res2=str5.endsWith("JS");
+        var res4=str5.endsWith("js");
+        document.write(res+"<br>");//true
+        document.write(res1+"<br>");//false
+        document.write(res2+"<br>");//true
+        document.write(res4+"<br>");//false
+        document.write("The length of the string:"+str5.length+"<br>");//19
+
+        //split method
+        var str6="my name is Bhai";
+        var res=str6.split("");
+        document.write(res+"<br>");//m,y, ,n,a,m,e, ,i,s, ,B,h,a,i
+       
+    </script>
+</body>
+</html>

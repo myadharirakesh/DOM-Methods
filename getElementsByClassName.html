@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hello" class="content">Hello world</h1>
+    <p class="content">Shilparamam is an arts and crafts village located in Madhapur, Hyderabad, 
+        Telangana, India. The village was conceived with an idea to create an environment 
+        for the preservation of traditional Indian crafts. There are ethnic</p>
+     <h2 class="content">my name is rakesh</h2> 
+     <h2 class="content2">Tech Jobs</h2>  
+     <h3 class="content">@ HYD </h3>
+    <button onclick="changeColor()">change color</button>
+    <script>
+        function changeColor(){
+            var tag=document.getElementsByClassName("content")
+            tag[0].style.color="red"
+            tag[1].style.color="blue"
+            tag[2].style.color="orange"
+            tag[3].style.color="cyan"
+            tag[4].style.color="green"
+        }
+    </script>
+
+</body>
+</html>

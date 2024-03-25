@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <script>
+         var age=prompt("Enter age");
+         let ageCheck=new Promise((res,rej)=>{
+             if(age>18)
+             {
+                 res(" You are eligible for vote");
+             }
+            else
+            {
+              rej("You are not eligible for vote");
+            }
+            });
+         ageCheck.then((msg)=>{document.write(msg)})
+         .catch((msg)=>{document.write(msg)})
+         .finally(()=>{document.write("<br> Thank you")})
+
+        /*var age=prompt("Enter age");
+         new Promise((res,rej)=>{
+            if(age>18)
+            {
+                res(" You are eligible for vote");
+            }
+            else
+            {
+                rej("You are not eligible for vote");
+            }
+        })
+        .then((msg)=>{document.write(msg)})
+        .catch((msg)=>{document.write(msg)})
+        // .finally(()=>{document.write("<br> Thank you")}) */
+    </script>
+</body>
+</html>

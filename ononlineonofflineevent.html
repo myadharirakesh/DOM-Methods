@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online offline</title>
+</head>
+<body onoffline="hello()" ononline="hello2()">
+    <h1 id="myh1">DRF</h1>
+    <script>
+    function hello()
+    {
+        document.getElementById("myh1").innerHTML="You are offline.....";
+        document.getElementById("myh1").style.color="red";
+    }
+    function hello2()
+    {
+        document.getElementById("myh1").innerHTML="You are online.....";
+        document.getElementById("myh1").style.color="green";
+    }
+</script>
+</body>
+</html>
